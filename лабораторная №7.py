@@ -9,7 +9,6 @@ class Employee:
 
 class Manager(Employee):
     def __init__(self, name, emp_id, department):
-        # Замечание: удаляем вызов super() и явно обращаемся к Employee
         Employee.__init__(self, name, emp_id)
         self.department = department
 
@@ -89,4 +88,5 @@ if __name__ == "__main__":
     print()
     print(tech_manager.manage_project())
     print(tech_manager.perform_maintenance())
+
     print(tech_manager.get_team_info())
